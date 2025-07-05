@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: 
+
+  jpa:
+    defer-datasource-initialization: true
+
+logging:
+  level:
+    de.meziane.ms.controller.EmployeeController: DEBUG
+management: 
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    enable:
+      all: true
