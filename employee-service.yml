@@ -14,11 +14,3 @@ spring:
 logging:
   level:
     de.meziane.ms.controller.EmployeeController: DEBUG
-management: 
-  endpoints:
-    web:
-      exposure:
-        include: health,info,metrics,prometheus
-  metrics:
-    enable:
-      all: true
