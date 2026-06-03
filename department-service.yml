@@ -9,11 +9,11 @@ spring:
 
   jpa:
     defer-datasource-initialization: true
-    how-sql: true
+    show-sql: true
 #  sql:
 #    init:
 #      mode: always
       
 logging:
   level:
-    de.meziane.ms.controller.EmployeeController: DEBUG
+    de.meziane.ms.controller.DepartmentController: DEBUG
