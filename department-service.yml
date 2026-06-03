@@ -12,10 +12,13 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-#  sql:
-#    init:
-#      mode: always
-      
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
 logging:
   level:
     de.meziane.ms.controller.DepartmentController: DEBUG
