@@ -1,6 +1,8 @@
 server:
   port: 8082
 spring:
+  application:
+    name: employee-service
   datasource:
     url: jdbc:postgresql://employeedb:5432/employeedb
     username: admin
