@@ -17,7 +17,7 @@ spring:
                   statuses: BAD_GATEWAY, GATEWAY_TIMEOUT
 
         - id: EMPLOYEE-SERVICE
-          uri: http://employee-service:8080
+          uri: lb://EMPLOYEE-SERVICE
           predicates:
             - Path=/employees/**
           filters:
