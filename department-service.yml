@@ -23,6 +23,11 @@ management:
   metrics:
     tags:
       application: ${spring.application.name}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://service-registry:8761/eureka}
       
 
 logging:
