@@ -27,7 +27,7 @@ management:
  #  instance:
  #    prefer-ip-address: true
  #    hostname: employee-service 
- eureka:
+eureka:
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://service-registry:8761/eureka}
