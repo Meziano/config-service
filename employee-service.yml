@@ -4,6 +4,7 @@ spring:
   application:
     name: EMPLOYEE-SERVICE
   datasource:
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://employeedb:5432/employeedb
     username: admin
     password: admin
