@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: DEPARTMENT-SERVICE
+    name: department-service
   datasource:
     url: jdbc:postgresql://departmentdb:5432/departmentdb    
     username: admin
