@@ -25,6 +25,8 @@ management:
       application: ${spring.application.name}
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: ${EUREKA_URI:http://service-registry:8761/eureka}
