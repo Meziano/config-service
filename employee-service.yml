@@ -22,6 +22,11 @@ management:
     tags:
       application: ${spring.application.name}
 
+ eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: employee-service 
+
 logging:
   level:
     de.meziane.ms.controller.EmployeeController: DEBUG
